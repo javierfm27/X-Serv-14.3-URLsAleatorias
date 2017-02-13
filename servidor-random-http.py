@@ -13,8 +13,8 @@ while True:
     print("HTTP request received")
     print(clientSocket.recv(1024))
     clientSocket.send('HTTP/1.1 200 OK\r\n\r\n' +
-                      '<html> <body> <section> Hola. <a href='+
-                      str(random.randint(0,1000)) +
+                      '<html> <body> <section> Hola. <a href=' +
+                      str(random.randint(0, 1000)) +
                       '> Dame otra </a>' +
                       '</section> </body> </html>')
-    clientSocket.close();
+    clientSocket.close()
